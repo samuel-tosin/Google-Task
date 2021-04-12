@@ -1,0 +1,265 @@
+  
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    padding: .5em;
+}
+
+nav a {
+    color: rgba(0, 0, 0, 0.795);
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.589);
+    font-size: 13px;
+    font-family: tahoma;
+    font-weight: 400;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.nav-img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .6s ease;
+    margin-right: 20px;
+}
+
+.nav-img img {
+    height: 20px;
+    cursor: pointer;
+
+}
+
+.nav-img:hover {
+    background: rgba(128, 128, 128, 0.158);
+}
+
+.nav-name {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .6s ease;
+    background: orangered;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+
+
+/* The section of the main */
+main {
+    margin: .5rem auto 11.1em auto;
+    text-align: center;
+}
+
+.main_google {
+    width: 299px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.main_google img {
+    width: 100%;
+    height: 100%;
+}
+
+.main_input {
+    width: 550px;
+    border-radius: 30px;
+    border: 1px solid rgba(128, 128, 128, 0.356);
+    margin: 0 auto;
+}
+
+.icon {
+    color: rgba(128, 128, 128, 0.575);
+    margin-left: 2px;
+}
+
+.icons {
+    color: blue;
+    margin-right: 3px;
+}
+
+.main_input input {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 88%;
+    padding: 1.1em;
+}
+
+.btns_container {
+    margin-top: 1em;
+    margin-left: 10px;
+}
+
+.btns_container button {
+    padding: .8em 1.2em;
+    border: none;
+    background: rgba(128, 128, 128, 0.075);
+    cursor: pointer;
+    letter-spacing: 0.7px;
+    margin-right: 10px;
+    color: rgba(0, 0, 0, 0.74);
+}
+
+.btns_container button:hover {
+    box-shadow: 1px 1px 1px 1.5px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+
+
+/*  */
+.main_bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.main_bottom a,
+p {
+    margin: 0 7px;
+}
+
+.main_bottom a {
+    color: blue;
+}
+
+.main_bottom p {
+    font-size: 14px;
+}
+
+
+/* The section of the footer */
+footer {
+    background: rgba(128, 128, 128, 0.123);
+}
+
+.footer_top {
+    padding: 1em;
+    color: rgba(0, 0, 0, 0.589);
+    font-size: 13px;
+    font-family: Tahoma;
+    letter-spacing: 1px;
+}
+
+.footer_bottom {
+    padding: .9em 1.5em;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(128, 128, 128, 0.267);
+}
+
+.carbon {
+    margin-left: -10em;
+}
+
+.left a {
+    margin-right: 2em;
+}
+
+.right a {
+    margin-right: 2em;
+}
+
+
+/*Media Query*/
+
+@media screen and (max-width:1024px) {
+    main {
+        margin: .5rem auto 8em auto;
+    }
+
+    .main_input {
+        width: 480px;
+    }
+
+    .main_bottom a,
+    p {
+        margin: 0 4px;
+    }
+
+    .footer_bottom {
+        padding: .9em 1.5em;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .middle {
+        flex-direction: row-reverse;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .carbon {
+        margin-left: 0;
+        padding: 5px;
+    }
+
+
+}
+
+
+@media screen and (max-width:768px) {
+    main {
+        margin: .5rem auto 8em auto;
+    }
+
+    .main_input {
+        width: 480px;
+    }
+
+    .main_bottom a,
+    p {
+        margin: 0 4px;
+    }
+
+    .footer_bottom {
+        padding: .9em 1.5em;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .middle {
+        flex-direction: row-reverse;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .carbon {
+        margin-left: 0;
+        padding: 5px;
+    }
+
+
+}
